@@ -29,8 +29,8 @@ class User(Base):
 # 라우트 정의
 @app.get("/")
 def index():
-    messgae = `Hello from fastapi x Docker Compose`
-    return {"message": messgae}
+    message = "Hello from fastapi x Docker Compose"
+    return {"message": message}
 
 
 @app.get("/users")
